@@ -77,14 +77,3 @@ finetuned_model = train_and_finetune(
     data_aug='y',
     learning_rate=0.001
 )
-
-----
-
-
-
-
-
-
-
-
-
