@@ -62,6 +62,12 @@ torchvision>=0.13.0
 pytorch-lightning>=2.0.0
 wandb>=0.15.0
 
+### Wandb Link
+https://api.wandb.ai/links/cs24m024-iit-madras/cboyyrhf
+
+### Way to run train.py
+!python train.py --wandb_entity "cs24m024-iit-madras" --wandb_project "da6401-assignment-2" --epochs 3 --batch_count 32 --data_aug 'y' --lr_rate 0.0005 --model_type "from_scratch"
+
 ### Example Run
 
 ```python
@@ -71,6 +77,13 @@ finetuned_model = train_and_finetune(
     data_aug='y',
     learning_rate=0.001
 )
+
+----
+
+
+
+
+
 
 
 
