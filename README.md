@@ -43,7 +43,11 @@ finetuned_model = train_and_finetune(
     data_aug='y',
     learning_rate=0.001
 )
+
+
 ---
+
+
 ## Highlights
 
 -  **Transfer Learning Works!**
@@ -60,6 +64,8 @@ finetuned_model = train_and_finetune(
 - **Logging + Monitoring**
   - Integrated with Weights & Biases (WandB) for tracking metrics, losses, and training progress.
 ---
+
+
 ## Requirements
 
 Install the required packages with pip:
