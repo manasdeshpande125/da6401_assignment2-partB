@@ -9,7 +9,7 @@ This project fine-tunes a pretrained `ResNet18` model on the iNaturalist 12K dat
 
 - **iNaturalist 12K** (10-class subset)
 - Folder structure: `train/class_name`, `val/class_name`
-- Preprocessing: Resize (256x256), Normalize, optional `RandomHorizontalFlip`
+- Preprocessing: Resize (224x2224), Normalize
 
 ---
 
@@ -43,7 +43,7 @@ finetuned_model = train_and_finetune(
     data_aug='y',
     learning_rate=0.001
 )
-
+---
 ## Highlights
 
 -  **Transfer Learning Works!**
@@ -59,7 +59,7 @@ finetuned_model = train_and_finetune(
 
 - **Logging + Monitoring**
   - Integrated with Weights & Biases (WandB) for tracking metrics, losses, and training progress.
-
+---
 ## Requirements
 
 Install the required packages with pip:
