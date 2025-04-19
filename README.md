@@ -34,17 +34,6 @@ All strategies are based on `torchvision.models.resnet18`.
 - Logging: **Weights & Biases (WandB)**
 - Early stopping + model checkpointing
 
-### Example Run
-
-```python
-finetuned_model = train_and_finetune(
-    epochs=10,
-    batch_size=32,
-    data_aug='y',
-    learning_rate=0.001
-)
-
-
 ---
 
 
@@ -65,12 +54,24 @@ finetuned_model = train_and_finetune(
   - Integrated with Weights & Biases (WandB) for tracking metrics, losses, and training progress.
 ---
 
-
 ## Requirements
 
 Install the required packages with pip:
+torch>=1.12.0
+torchvision>=0.13.0
+pytorch-lightning>=2.0.0
+wandb>=0.15.0
 
-```bash
-pip install -r requirements.txt
+### Example Run
+
+```python
+finetuned_model = train_and_finetune(
+    epochs=10,
+    batch_size=32,
+    data_aug='y',
+    learning_rate=0.001
+)
+
+
 
 
