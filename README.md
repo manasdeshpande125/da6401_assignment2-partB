@@ -26,12 +26,6 @@ All strategies are based on `torchvision.models.resnet18`.
 
 ---
 
-## Requirements
-
-Install the required packages with pip:
-
-```bash
-pip install -r requirements.txt
 
 ## Training Pipeline
 
@@ -65,4 +59,12 @@ finetuned_model = train_and_finetune(
 
 - **Logging + Monitoring**
   - Integrated with Weights & Biases (WandB) for tracking metrics, losses, and training progress.
+
+## Requirements
+
+Install the required packages with pip:
+
+```bash
+pip install -r requirements.txt
+
 
